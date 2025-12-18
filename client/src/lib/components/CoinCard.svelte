@@ -63,7 +63,7 @@
                       group-hover:opacity-50 transition-opacity duration-300 shadow-inner"></div>
           <div class="absolute inset-2 rounded-full border-2 border-dashed border-[var(--text-muted)]/30"></div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <span class="text-3xl text-[var(--text-muted)]/60 group-hover:text-[var(--accent-gold)]/60 transition-colors">☉</span>
+            <span class="text-3xl text-[var(--text-muted)]/60 group-hover:text-[var(--accent-gold)]/60 transition-colors translate-y-0.5">☉</span>
           </div>
         </div>
       </div>

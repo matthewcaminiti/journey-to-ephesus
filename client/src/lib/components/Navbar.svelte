@@ -25,13 +25,17 @@
     <div class="flex items-center justify-between h-18 py-3">
       <!-- Logo/Brand -->
       <a href="/" class="flex items-center gap-4 group">
-        <div class="w-12 h-12 rounded-full border-2 border-[var(--accent-gold)]/40 bg-gradient-to-br from-[var(--bg-tertiary)] to-[var(--bg-hover)]
-                    flex items-center justify-center text-[var(--accent-gold)] text-xl
+        <div class="w-12 h-12 rounded-full border-2 border-[var(--accent-gold)]/40 overflow-hidden
                     group-hover:border-[var(--accent-gold)] group-hover:shadow-lg group-hover:shadow-[var(--accent-gold)]/10 
-                    transition-all duration-300">
-          ☉
+                    transition-all duration-300 bg-[var(--bg-tertiary)]"
+             >
+          <img 
+            src="/ephesus-coin.jpg" 
+            alt="Ephesus Coin Logo" 
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
         </div>
-        <div class="flex flex-col">
+        <div class="hidden sm:flex flex-col">
           <span class="text-xl font-semibold text-[var(--text-primary)] tracking-wide transition-colors" style="font-family: 'Cormorant Garamond', Georgia, serif;">
             Journey to Ephesus
           </span>
@@ -68,15 +72,15 @@
           aria-label="Toggle theme"
         >
           <!-- Sun icon -->
-          <span class="absolute left-1.5 top-1/2 -translate-y-1/2 text-sm leading-none transition-all duration-300
+          <span class="absolute left-1.5 top-1/2 text-sm leading-none transition-all duration-300
                        {theme === 'light' ? 'opacity-100 text-[var(--accent-gold)]' : 'opacity-40 text-[var(--text-muted)]'}"
-                style="display: flex; align-items: center; justify-content: center; height: 16px;">
+                style="display: flex; align-items: center; justify-content: center; line-height: 1; transform: translateY(-42%);">
             ☀
           </span>
           <!-- Moon icon -->
-          <span class="absolute right-1.5 top-1/2 -translate-y-1/2 text-sm leading-none transition-all duration-300
+          <span class="absolute right-1.5 top-1/2 text-sm leading-none transition-all duration-300
                        {theme === 'dark' ? 'opacity-100 text-[var(--accent-gold)]' : 'opacity-40 text-[var(--text-muted)]'}"
-                style="display: flex; align-items: center; justify-content: center; height: 16px;">
+                style="display: flex; align-items: center; justify-content: center; line-height: 1; transform: translateY(-42%);">
             ☽
           </span>
           <!-- Toggle indicator -->

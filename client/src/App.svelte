@@ -65,9 +65,12 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full border border-[var(--accent-gold)]/30 bg-[var(--bg-tertiary)] 
-                        flex items-center justify-center text-[var(--accent-gold)] text-lg transition-colors">
-              ☉
+            <div class="w-10 h-10 rounded-full border border-[var(--accent-gold)]/30 overflow-hidden bg-[var(--bg-tertiary)] transition-colors">
+              <img 
+                src="/ephesus-coin.jpg" 
+                alt="Ephesus Coin Logo" 
+                class="w-full h-full object-cover"
+              />
             </div>
             <div class="flex flex-col">
               <span class="text-sm text-[var(--text-primary)] transition-colors" style="font-family: 'Cormorant Garamond', Georgia, serif;">Journey to Ephesus</span>
